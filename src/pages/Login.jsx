@@ -26,7 +26,7 @@ export default function Login() {
   return (
     <div className="login-screen">
       <form className="login-card" onSubmit={handleSubmit}>
-        <h1>dei fiori</h1>
+        <img src="/logo-deifiori.png" alt="dei fiori" className="login-logo" />
         <p className="tag">Manual fotográfico · acceso interno</p>
 
         {error && <p className="error-text">{error}</p>}

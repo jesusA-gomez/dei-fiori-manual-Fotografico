@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <Link to="/" className="brand">
-        <span className="mark">dei fiori</span>
+        <img src="/logo-deifiori.png" alt="dei fiori" className="brand-logo" />
         <span className="tag">manual fotográfico</span>
       </Link>
       {session && (

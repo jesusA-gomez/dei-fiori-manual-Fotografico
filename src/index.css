@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap");
 
 :root {
-  --cream: #f5efe4;
-  --cream-soft: #ece3d2;
-  --brown: #3a2a1f;
-  --brown-soft: #6b5847;
-  --terracotta: #c2622f;
-  --terracotta-dark: #9c4c22;
+  --cream: #f3ebe0;
+  --cream-soft: #ece0cd;
+  --brown: #3a2418;
+  --brown-soft: #7a5d4a;
+  --wine: #641122;
+  --wine-dark: #4a0c19;
+  --magenta: #86002e;
   --sage: #6f7d54;
-  --line: #ddd0ba;
+  --line: #ddccb0;
   --white: #fffaf2;
   --radius: 14px;
 }
@@ -28,6 +29,12 @@ h1, h2, h3 {
   font-family: "Fraunces", serif;
   font-weight: 600;
   margin: 0;
+}
+
+h1, .page-head h2 {
+  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  color: var(--wine);
 }
 
 a {
@@ -57,14 +64,21 @@ button {
 
 .brand {
   display: flex;
-  align-items: baseline;
-  gap: 8px;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
 
 .brand .mark {
   font-family: "Fraunces", serif;
   font-style: italic;
   font-size: 22px;
+}
+
+.brand-logo {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 
 .brand .tag {
@@ -93,13 +107,13 @@ button {
   padding: 10px 18px;
   font-size: 14px;
   font-weight: 500;
-  background: var(--terracotta);
+  background: var(--wine);
   color: var(--white);
   transition: background 0.15s ease;
 }
 
 .btn:hover {
-  background: var(--terracotta-dark);
+  background: var(--wine-dark);
 }
 
 .btn.secondary {
@@ -115,6 +129,8 @@ button {
   align-items: center;
   justify-content: center;
   padding: 24px;
+  background: linear-gradient(180deg, rgba(100, 17, 34, 0.55), rgba(58, 36, 24, 0.7)),
+    url("/colibri-deifiori.png") center 20% / cover no-repeat;
 }
 
 .login-card {
@@ -131,6 +147,13 @@ button {
   font-size: 28px;
   font-style: italic;
   margin-bottom: 4px;
+}
+
+.login-logo {
+  height: 46px;
+  width: auto;
+  margin: 0 auto 12px;
+  display: block;
 }
 
 .login-card p.tag {
@@ -166,7 +189,7 @@ button {
 }
 
 .error-text {
-  color: var(--terracotta-dark);
+  color: var(--wine-dark);
   font-size: 13px;
   margin-bottom: 12px;
 }
@@ -185,7 +208,8 @@ button {
 }
 
 .page-head h2 {
-  font-size: 30px;
+  font-size: 46px;
+  line-height: 1;
 }
 
 .category-grid {
@@ -198,25 +222,49 @@ button {
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 20px;
+  padding: 22px 22px 20px;
   text-decoration: none;
   display: block;
-  transition: border-color 0.15s ease, transform 0.15s ease;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--wine);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
 }
 
 .category-card:hover {
-  border-color: var(--terracotta);
-  transform: translateY(-2px);
+  border-color: var(--wine);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(100, 17, 34, 0.1);
+}
+
+.category-card:hover::before {
+  transform: scaleX(1);
 }
 
 .category-card .count {
-  font-size: 12px;
-  color: var(--brown-soft);
-  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 12px;
 }
 
 .category-card h3 {
-  font-size: 18px;
+  font-size: 19px;
+  color: var(--brown);
 }
 
 /* Category page */
@@ -237,11 +285,17 @@ button {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 28px rgba(58, 36, 24, 0.1);
+  transform: translateY(-2px);
 }
 
 .product-photo {
   aspect-ratio: 4 / 3;
-  background: var(--cream-soft);
+  background: linear-gradient(160deg, var(--cream-soft), #e3d3b8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,55 +310,69 @@ button {
 }
 
 .product-photo .empty {
-  font-size: 12px;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--brown-soft);
   text-align: center;
   padding: 12px;
+  opacity: 0.7;
 }
 
 .product-body {
-  padding: 14px 16px 16px;
+  padding: 16px 18px 18px;
 }
 
 .product-body h4 {
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--cream-soft);
+  color: var(--brown);
 }
 
 .brand-row {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 10px;
   font-size: 13px;
-  padding: 6px 0;
-  border-bottom: 1px solid var(--cream-soft);
-}
-
-.brand-row:last-of-type {
-  border-bottom: none;
+  padding: 7px 0;
 }
 
 .brand-row .label {
   color: var(--brown-soft);
   flex-shrink: 0;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .brand-row input {
   border: none;
+  border-bottom: 1px solid transparent;
   background: transparent;
   text-align: right;
   font-size: 13px;
   color: var(--brown);
   width: 100%;
+  padding: 2px 0;
+  transition: border-color 0.15s ease;
+}
+
+.brand-row input:hover {
+  border-bottom-color: var(--line);
 }
 
 .brand-row input:focus {
   outline: none;
-  border-bottom: 1px solid var(--terracotta);
+  border-bottom: 1px solid var(--wine);
 }
 
 .upload-row {
-  margin-top: 10px;
+  margin-top: 12px;
   display: flex;
   gap: 8px;
 }
@@ -313,10 +381,17 @@ button {
   flex: 1;
   text-align: center;
   font-size: 12px;
-  padding: 8px;
-  border: 1px dashed var(--line);
+  font-weight: 500;
+  padding: 9px;
+  border: 1px solid var(--wine);
   border-radius: 8px;
-  color: var(--brown-soft);
+  color: var(--wine);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.upload-row label:hover {
+  background: var(--wine);
+  color: var(--white);
 }
 
 .upload-row input[type="file"] {
@@ -333,5 +408,7 @@ button {
 
 .saved-flag {
   font-size: 11px;
+  font-weight: 500;
   color: var(--sage);
+  margin-top: 8px;
 }
