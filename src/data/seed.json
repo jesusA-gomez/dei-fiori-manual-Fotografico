@@ -1,0 +1,951 @@
+{
+  "categorias": [
+    {
+      "slug": "fiambreria",
+      "nombre": "Fiambrería",
+      "orden": 1
+    },
+    {
+      "slug": "panaderia",
+      "nombre": "Panadería",
+      "orden": 2
+    },
+    {
+      "slug": "pasteleria",
+      "nombre": "Pastelería",
+      "orden": 3
+    },
+    {
+      "slug": "verduleria",
+      "nombre": "Verdulería",
+      "orden": 4
+    },
+    {
+      "slug": "almacen",
+      "nombre": "Almacén",
+      "orden": 5
+    },
+    {
+      "slug": "forrajeria",
+      "nombre": "Forrajería",
+      "orden": 6
+    },
+    {
+      "slug": "carniceria",
+      "nombre": "Carnicería",
+      "orden": 7
+    },
+    {
+      "slug": "pastas",
+      "nombre": "Pastas",
+      "orden": 8
+    },
+    {
+      "slug": "lacteos",
+      "nombre": "Lácteos",
+      "orden": 9
+    },
+    {
+      "slug": "bebidas",
+      "nombre": "Bebidas",
+      "orden": 10
+    },
+    {
+      "slug": "congelados",
+      "nombre": "Congelados",
+      "orden": 11
+    },
+    {
+      "slug": "limpieza-y-descartables",
+      "nombre": "Limpieza y Descartables",
+      "orden": 12
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "categoria_slug": "fiambreria",
+      "nombre": "Burrata"
+    },
+    {
+      "id": 2,
+      "categoria_slug": "fiambreria",
+      "nombre": "Jamón cocido"
+    },
+    {
+      "id": 3,
+      "categoria_slug": "fiambreria",
+      "nombre": "Jamón crudo"
+    },
+    {
+      "id": 4,
+      "categoria_slug": "fiambreria",
+      "nombre": "Crema de leche"
+    },
+    {
+      "id": 5,
+      "categoria_slug": "fiambreria",
+      "nombre": "Queso crema"
+    },
+    {
+      "id": 6,
+      "categoria_slug": "fiambreria",
+      "nombre": "Queso Dambo fetas"
+    },
+    {
+      "id": 7,
+      "categoria_slug": "fiambreria",
+      "nombre": "Queso Dambo pieza"
+    },
+    {
+      "id": 8,
+      "categoria_slug": "fiambreria",
+      "nombre": "Ricotta"
+    },
+    {
+      "id": 9,
+      "categoria_slug": "fiambreria",
+      "nombre": "Cheddar"
+    },
+    {
+      "id": 10,
+      "categoria_slug": "panaderia",
+      "nombre": "Croissant"
+    },
+    {
+      "id": 11,
+      "categoria_slug": "panaderia",
+      "nombre": "Medialuna"
+    },
+    {
+      "id": 12,
+      "categoria_slug": "panaderia",
+      "nombre": "Brioche"
+    },
+    {
+      "id": 13,
+      "categoria_slug": "panaderia",
+      "nombre": "Ciabatta"
+    },
+    {
+      "id": 14,
+      "categoria_slug": "panaderia",
+      "nombre": "Pan campo"
+    },
+    {
+      "id": 15,
+      "categoria_slug": "panaderia",
+      "nombre": "Tortilla"
+    },
+    {
+      "id": 16,
+      "categoria_slug": "panaderia",
+      "nombre": "Molde integral"
+    },
+    {
+      "id": 17,
+      "categoria_slug": "panaderia",
+      "nombre": "Molde blanco"
+    },
+    {
+      "id": 18,
+      "categoria_slug": "panaderia",
+      "nombre": "Molde french"
+    },
+    {
+      "id": 19,
+      "categoria_slug": "panaderia",
+      "nombre": "Molde sin TACC"
+    },
+    {
+      "id": 20,
+      "categoria_slug": "panaderia",
+      "nombre": "Pan Keto"
+    },
+    {
+      "id": 21,
+      "categoria_slug": "pasteleria",
+      "nombre": "Budín banana"
+    },
+    {
+      "id": 22,
+      "categoria_slug": "pasteleria",
+      "nombre": "Budín limón"
+    },
+    {
+      "id": 23,
+      "categoria_slug": "pasteleria",
+      "nombre": "Roll canela"
+    },
+    {
+      "id": 24,
+      "categoria_slug": "pasteleria",
+      "nombre": "Tarta choco"
+    },
+    {
+      "id": 25,
+      "categoria_slug": "pasteleria",
+      "nombre": "Tarta frutos s."
+    },
+    {
+      "id": 26,
+      "categoria_slug": "pasteleria",
+      "nombre": "Tarta lemon pie"
+    },
+    {
+      "id": 27,
+      "categoria_slug": "pasteleria",
+      "nombre": "Alfa choco blanco"
+    },
+    {
+      "id": 28,
+      "categoria_slug": "pasteleria",
+      "nombre": "Alfa de choco"
+    },
+    {
+      "id": 29,
+      "categoria_slug": "pasteleria",
+      "nombre": "Alfa pistacho"
+    },
+    {
+      "id": 30,
+      "categoria_slug": "pasteleria",
+      "nombre": "Alfajor maicena"
+    },
+    {
+      "id": 31,
+      "categoria_slug": "pasteleria",
+      "nombre": "Cookies choco"
+    },
+    {
+      "id": 32,
+      "categoria_slug": "pasteleria",
+      "nombre": "Cookies clásica"
+    },
+    {
+      "id": 33,
+      "categoria_slug": "pasteleria",
+      "nombre": "Cookies pistacho"
+    },
+    {
+      "id": 34,
+      "categoria_slug": "pasteleria",
+      "nombre": "Pepas"
+    },
+    {
+      "id": 35,
+      "categoria_slug": "pasteleria",
+      "nombre": "Alfa almendra"
+    },
+    {
+      "id": 36,
+      "categoria_slug": "pasteleria",
+      "nombre": "Alfajor nuez"
+    },
+    {
+      "id": 37,
+      "categoria_slug": "pasteleria",
+      "nombre": "Frola s/TACC"
+    },
+    {
+      "id": 38,
+      "categoria_slug": "pasteleria",
+      "nombre": "Coco s/TACC"
+    },
+    {
+      "id": 39,
+      "categoria_slug": "pasteleria",
+      "nombre": "Choco s/TACC"
+    },
+    {
+      "id": 40,
+      "categoria_slug": "verduleria",
+      "nombre": "Banana"
+    },
+    {
+      "id": 41,
+      "categoria_slug": "verduleria",
+      "nombre": "Manzana roja"
+    },
+    {
+      "id": 42,
+      "categoria_slug": "verduleria",
+      "nombre": "Manzana verde"
+    },
+    {
+      "id": 43,
+      "categoria_slug": "verduleria",
+      "nombre": "Pera"
+    },
+    {
+      "id": 44,
+      "categoria_slug": "verduleria",
+      "nombre": "Tomate cherry"
+    },
+    {
+      "id": 45,
+      "categoria_slug": "verduleria",
+      "nombre": "Tomate perita"
+    },
+    {
+      "id": 46,
+      "categoria_slug": "verduleria",
+      "nombre": "Portobellos"
+    },
+    {
+      "id": 47,
+      "categoria_slug": "verduleria",
+      "nombre": "Limón"
+    },
+    {
+      "id": 48,
+      "categoria_slug": "verduleria",
+      "nombre": "Paltas"
+    },
+    {
+      "id": 49,
+      "categoria_slug": "verduleria",
+      "nombre": "Huevos"
+    },
+    {
+      "id": 50,
+      "categoria_slug": "verduleria",
+      "nombre": "Kiwi"
+    },
+    {
+      "id": 51,
+      "categoria_slug": "verduleria",
+      "nombre": "Durazno pelón"
+    },
+    {
+      "id": 52,
+      "categoria_slug": "verduleria",
+      "nombre": "Ciruela"
+    },
+    {
+      "id": 53,
+      "categoria_slug": "verduleria",
+      "nombre": "Uva"
+    },
+    {
+      "id": 54,
+      "categoria_slug": "verduleria",
+      "nombre": "Ajo"
+    },
+    {
+      "id": 55,
+      "categoria_slug": "verduleria",
+      "nombre": "Rúcula"
+    },
+    {
+      "id": 56,
+      "categoria_slug": "verduleria",
+      "nombre": "Lechuga"
+    },
+    {
+      "id": 57,
+      "categoria_slug": "verduleria",
+      "nombre": "Albahaca"
+    },
+    {
+      "id": 58,
+      "categoria_slug": "verduleria",
+      "nombre": "Menta"
+    },
+    {
+      "id": 59,
+      "categoria_slug": "verduleria",
+      "nombre": "Orégano fresco"
+    },
+    {
+      "id": 60,
+      "categoria_slug": "verduleria",
+      "nombre": "Ciboulette"
+    },
+    {
+      "id": 61,
+      "categoria_slug": "verduleria",
+      "nombre": "Berenjena"
+    },
+    {
+      "id": 62,
+      "categoria_slug": "verduleria",
+      "nombre": "Brotes alfalfa"
+    },
+    {
+      "id": 63,
+      "categoria_slug": "verduleria",
+      "nombre": "Jengibre"
+    },
+    {
+      "id": 64,
+      "categoria_slug": "verduleria",
+      "nombre": "Brotes girasol"
+    },
+    {
+      "id": 65,
+      "categoria_slug": "verduleria",
+      "nombre": "Cebolla blanca"
+    },
+    {
+      "id": 66,
+      "categoria_slug": "verduleria",
+      "nombre": "Cebolla morada"
+    },
+    {
+      "id": 67,
+      "categoria_slug": "verduleria",
+      "nombre": "Zanahoria"
+    },
+    {
+      "id": 68,
+      "categoria_slug": "verduleria",
+      "nombre": "Coliflor"
+    },
+    {
+      "id": 69,
+      "categoria_slug": "verduleria",
+      "nombre": "Papa"
+    },
+    {
+      "id": 70,
+      "categoria_slug": "verduleria",
+      "nombre": "Brócoli"
+    },
+    {
+      "id": 71,
+      "categoria_slug": "verduleria",
+      "nombre": "Perejil"
+    },
+    {
+      "id": 72,
+      "categoria_slug": "almacen",
+      "nombre": "Pan rallado"
+    },
+    {
+      "id": 73,
+      "categoria_slug": "almacen",
+      "nombre": "Azúcar fardo"
+    },
+    {
+      "id": 74,
+      "categoria_slug": "almacen",
+      "nombre": "Frosting"
+    },
+    {
+      "id": 75,
+      "categoria_slug": "almacen",
+      "nombre": "Maicena"
+    },
+    {
+      "id": 76,
+      "categoria_slug": "almacen",
+      "nombre": "Aceitunas verdes"
+    },
+    {
+      "id": 77,
+      "categoria_slug": "almacen",
+      "nombre": "Garbanzo"
+    },
+    {
+      "id": 78,
+      "categoria_slug": "almacen",
+      "nombre": "Dulce de leche"
+    },
+    {
+      "id": 79,
+      "categoria_slug": "almacen",
+      "nombre": "Papas snack"
+    },
+    {
+      "id": 80,
+      "categoria_slug": "almacen",
+      "nombre": "Salsa inglesa"
+    },
+    {
+      "id": 81,
+      "categoria_slug": "almacen",
+      "nombre": "Aceite de oliva"
+    },
+    {
+      "id": 82,
+      "categoria_slug": "almacen",
+      "nombre": "Miel"
+    },
+    {
+      "id": 83,
+      "categoria_slug": "almacen",
+      "nombre": "Mermeladas"
+    },
+    {
+      "id": 84,
+      "categoria_slug": "almacen",
+      "nombre": "Edulcorante líq."
+    },
+    {
+      "id": 85,
+      "categoria_slug": "almacen",
+      "nombre": "Vinagre"
+    },
+    {
+      "id": 86,
+      "categoria_slug": "almacen",
+      "nombre": "Aceite girasol"
+    },
+    {
+      "id": 87,
+      "categoria_slug": "almacen",
+      "nombre": "Lata durazno"
+    },
+    {
+      "id": 88,
+      "categoria_slug": "almacen",
+      "nombre": "Atún lomito 120g"
+    },
+    {
+      "id": 89,
+      "categoria_slug": "almacen",
+      "nombre": "Esencia vainilla"
+    },
+    {
+      "id": 90,
+      "categoria_slug": "almacen",
+      "nombre": "Sal fina"
+    },
+    {
+      "id": 91,
+      "categoria_slug": "almacen",
+      "nombre": "Sal entrefina"
+    },
+    {
+      "id": 92,
+      "categoria_slug": "almacen",
+      "nombre": "Harina 000"
+    },
+    {
+      "id": 93,
+      "categoria_slug": "almacen",
+      "nombre": "Harina leudante"
+    },
+    {
+      "id": 94,
+      "categoria_slug": "almacen",
+      "nombre": "Mayonesa"
+    },
+    {
+      "id": 95,
+      "categoria_slug": "almacen",
+      "nombre": "Mostaza"
+    },
+    {
+      "id": 96,
+      "categoria_slug": "almacen",
+      "nombre": "Lentejas"
+    },
+    {
+      "id": 97,
+      "categoria_slug": "almacen",
+      "nombre": "Comino"
+    },
+    {
+      "id": 98,
+      "categoria_slug": "almacen",
+      "nombre": "Aceto balsámico"
+    },
+    {
+      "id": 99,
+      "categoria_slug": "almacen",
+      "nombre": "Tomate triturado"
+    },
+    {
+      "id": 100,
+      "categoria_slug": "almacen",
+      "nombre": "Pulpa durazno"
+    },
+    {
+      "id": 101,
+      "categoria_slug": "almacen",
+      "nombre": "Pulpa frutilla"
+    },
+    {
+      "id": 102,
+      "categoria_slug": "almacen",
+      "nombre": "Pulpa banana"
+    },
+    {
+      "id": 103,
+      "categoria_slug": "almacen",
+      "nombre": "Café"
+    },
+    {
+      "id": 104,
+      "categoria_slug": "almacen",
+      "nombre": "Matcha 50g"
+    },
+    {
+      "id": 105,
+      "categoria_slug": "almacen",
+      "nombre": "Golden Milk"
+    },
+    {
+      "id": 106,
+      "categoria_slug": "almacen",
+      "nombre": "Nesquik"
+    },
+    {
+      "id": 107,
+      "categoria_slug": "almacen",
+      "nombre": "Azúcar caja 1000U"
+    },
+    {
+      "id": 108,
+      "categoria_slug": "almacen",
+      "nombre": "Edulcorante 500U"
+    },
+    {
+      "id": 109,
+      "categoria_slug": "forrajeria",
+      "nombre": "Avena"
+    },
+    {
+      "id": 110,
+      "categoria_slug": "forrajeria",
+      "nombre": "Frutos secos mix"
+    },
+    {
+      "id": 111,
+      "categoria_slug": "forrajeria",
+      "nombre": "Coco rallado"
+    },
+    {
+      "id": 112,
+      "categoria_slug": "forrajeria",
+      "nombre": "Nuez"
+    },
+    {
+      "id": 113,
+      "categoria_slug": "forrajeria",
+      "nombre": "Granola"
+    },
+    {
+      "id": 114,
+      "categoria_slug": "forrajeria",
+      "nombre": "Canela en polvo"
+    },
+    {
+      "id": 115,
+      "categoria_slug": "forrajeria",
+      "nombre": "Semilla girasol"
+    },
+    {
+      "id": 116,
+      "categoria_slug": "forrajeria",
+      "nombre": "Semilla zapallo"
+    },
+    {
+      "id": 117,
+      "categoria_slug": "forrajeria",
+      "nombre": "Tomate deshidratado"
+    },
+    {
+      "id": 118,
+      "categoria_slug": "forrajeria",
+      "nombre": "Yamani"
+    },
+    {
+      "id": 119,
+      "categoria_slug": "forrajeria",
+      "nombre": "Ají molido"
+    },
+    {
+      "id": 120,
+      "categoria_slug": "forrajeria",
+      "nombre": "Pimienta en grano"
+    },
+    {
+      "id": 121,
+      "categoria_slug": "forrajeria",
+      "nombre": "Pimentón ahumado"
+    },
+    {
+      "id": 122,
+      "categoria_slug": "carniceria",
+      "nombre": "Peceto pieza"
+    },
+    {
+      "id": 123,
+      "categoria_slug": "carniceria",
+      "nombre": "Filet de pollo"
+    },
+    {
+      "id": 124,
+      "categoria_slug": "carniceria",
+      "nombre": "Milanesa"
+    },
+    {
+      "id": 125,
+      "categoria_slug": "carniceria",
+      "nombre": "Peceto porcionado"
+    },
+    {
+      "id": 126,
+      "categoria_slug": "carniceria",
+      "nombre": "Ternera"
+    },
+    {
+      "id": 127,
+      "categoria_slug": "pastas",
+      "nombre": "Ñoquis"
+    },
+    {
+      "id": 128,
+      "categoria_slug": "pastas",
+      "nombre": "Tagliatelle 200g"
+    },
+    {
+      "id": 129,
+      "categoria_slug": "pastas",
+      "nombre": "Pasta milanesa 100g"
+    },
+    {
+      "id": 130,
+      "categoria_slug": "lacteos",
+      "nombre": "Yogurt"
+    },
+    {
+      "id": 131,
+      "categoria_slug": "lacteos",
+      "nombre": "Manteca"
+    },
+    {
+      "id": 132,
+      "categoria_slug": "lacteos",
+      "nombre": "Leche almendra"
+    },
+    {
+      "id": 133,
+      "categoria_slug": "lacteos",
+      "nombre": "Leche entera"
+    },
+    {
+      "id": 134,
+      "categoria_slug": "lacteos",
+      "nombre": "Leche deslactosada"
+    },
+    {
+      "id": 135,
+      "categoria_slug": "lacteos",
+      "nombre": "Leche descremada"
+    },
+    {
+      "id": 136,
+      "categoria_slug": "bebidas",
+      "nombre": "Jugo limón"
+    },
+    {
+      "id": 137,
+      "categoria_slug": "bebidas",
+      "nombre": "Jugo naranja"
+    },
+    {
+      "id": 138,
+      "categoria_slug": "bebidas",
+      "nombre": "Tónica Schweppes"
+    },
+    {
+      "id": 139,
+      "categoria_slug": "bebidas",
+      "nombre": "Agua sab. pera"
+    },
+    {
+      "id": 140,
+      "categoria_slug": "bebidas",
+      "nombre": "Pomelo rosado"
+    },
+    {
+      "id": 141,
+      "categoria_slug": "bebidas",
+      "nombre": "Coca Cola 375"
+    },
+    {
+      "id": 142,
+      "categoria_slug": "bebidas",
+      "nombre": "Coca Zero 375"
+    },
+    {
+      "id": 143,
+      "categoria_slug": "bebidas",
+      "nombre": "Fanta"
+    },
+    {
+      "id": 144,
+      "categoria_slug": "bebidas",
+      "nombre": "Sprite 375"
+    },
+    {
+      "id": 145,
+      "categoria_slug": "bebidas",
+      "nombre": "Seven Light"
+    },
+    {
+      "id": 146,
+      "categoria_slug": "bebidas",
+      "nombre": "Aperol Spritz"
+    },
+    {
+      "id": 147,
+      "categoria_slug": "bebidas",
+      "nombre": "Cinzano Spritz"
+    },
+    {
+      "id": 148,
+      "categoria_slug": "bebidas",
+      "nombre": "Vermouth Cinzano"
+    },
+    {
+      "id": 149,
+      "categoria_slug": "bebidas",
+      "nombre": "Campari"
+    },
+    {
+      "id": 150,
+      "categoria_slug": "bebidas",
+      "nombre": "Quijano"
+    },
+    {
+      "id": 151,
+      "categoria_slug": "bebidas",
+      "nombre": "Fernet Branca"
+    },
+    {
+      "id": 152,
+      "categoria_slug": "bebidas",
+      "nombre": "Mate cocido"
+    },
+    {
+      "id": 153,
+      "categoria_slug": "bebidas",
+      "nombre": "Gin"
+    },
+    {
+      "id": 154,
+      "categoria_slug": "bebidas",
+      "nombre": "Stella 330cc"
+    },
+    {
+      "id": 155,
+      "categoria_slug": "bebidas",
+      "nombre": "Corona 330cc"
+    },
+    {
+      "id": 156,
+      "categoria_slug": "bebidas",
+      "nombre": "Stella s/alcohol"
+    },
+    {
+      "id": 157,
+      "categoria_slug": "bebidas",
+      "nombre": "Bidón 20lt"
+    },
+    {
+      "id": 158,
+      "categoria_slug": "bebidas",
+      "nombre": "Zirup frambuesa"
+    },
+    {
+      "id": 159,
+      "categoria_slug": "bebidas",
+      "nombre": "Salentein"
+    },
+    {
+      "id": 160,
+      "categoria_slug": "bebidas",
+      "nombre": "Artista CHD"
+    },
+    {
+      "id": 161,
+      "categoria_slug": "congelados",
+      "nombre": "Smoothie DYM"
+    },
+    {
+      "id": 162,
+      "categoria_slug": "congelados",
+      "nombre": "Smoothie FYF"
+    },
+    {
+      "id": 163,
+      "categoria_slug": "congelados",
+      "nombre": "Frutos patagónicos"
+    },
+    {
+      "id": 164,
+      "categoria_slug": "congelados",
+      "nombre": "Barra submarino"
+    },
+    {
+      "id": 165,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Detergente"
+    },
+    {
+      "id": 166,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Esponja / Virulana"
+    },
+    {
+      "id": 167,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Lavandina"
+    },
+    {
+      "id": 168,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Cif desengrasante"
+    },
+    {
+      "id": 169,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Secante bobina"
+    },
+    {
+      "id": 170,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Servilleta 33x33"
+    },
+    {
+      "id": 171,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Servilleta 18x18"
+    },
+    {
+      "id": 172,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Bolsa compactadora"
+    },
+    {
+      "id": 173,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Bolsa 60x90"
+    },
+    {
+      "id": 174,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Bolsa 40x60"
+    },
+    {
+      "id": 175,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Corte 15x25"
+    },
+    {
+      "id": 176,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Corte 20x30"
+    },
+    {
+      "id": 177,
+      "categoria_slug": "limpieza-y-descartables",
+      "nombre": "Corte 30x40"
+    }
+  ]
+}
