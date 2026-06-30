@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --cream: #f3ebe0;
+  --cream-soft: #ece0cd;
+  --brown: #3a2418;
+  --brown-soft: #7a5d4a;
+  --wine: #641122;
+  --wine-dark: #4a0c19;
+  --magenta: #86002e;
+  --sage: #6f7d54;
+  --line: #ddccb0;
+  --white: #fffaf2;
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--brown);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+h1, .page-head h2 {
+  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  color: var(--wine);
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px 64px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--line);
+  background: var(--white);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand .mark {
+  font-family: "Fraunces", serif;
+  font-style: italic;
+  font-size: 22px;
+}
+
+.brand-logo {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+.brand .tag {
+  font-size: 12px;
+  color: var(--brown-soft);
+  letter-spacing: 0.04em;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 14px;
+  background: var(--white);
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  background: var(--wine);
+  color: var(--white);
+  transition: background 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--wine-dark);
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--brown);
+  border: 1px solid var(--line);
+}
+
+/* Login */
+.login-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(180deg, rgba(100, 17, 34, 0.55), rgba(58, 36, 24, 0.7)),
+    url("/colibri-deifiori.png") center 20% / cover no-repeat;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 36px 32px;
+  text-align: center;
+}
+
+.login-card h1 {
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.login-logo {
+  height: 46px;
+  width: auto;
+  margin: 0 auto 12px;
+  display: block;
+}
+
+.login-card p.tag {
+  color: var(--brown-soft);
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+
+.field {
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: var(--brown-soft);
+  margin-bottom: 6px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  background: var(--cream);
+}
+
+.login-card .btn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.error-text {
+  color: var(--wine-dark);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* Dashboard */
+.page-head {
+  padding: 40px 0 24px;
+}
+
+.page-head .eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 8px;
+}
+
+.page-head h2 {
+  font-size: 46px;
+  line-height: 1;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.category-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 22px 20px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--wine);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.category-card:hover {
+  border-color: var(--wine);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(100, 17, 34, 0.1);
+}
+
+.category-card:hover::before {
+  transform: scaleX(1);
+}
+
+.category-card .count {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 12px;
+}
+
+.category-card h3 {
+  font-size: 19px;
+  color: var(--brown);
+}
+
+/* Category page */
+.crumb {
+  font-size: 13px;
+  color: var(--brown-soft);
+  margin-bottom: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 28px rgba(58, 36, 24, 0.1);
+  transform: translateY(-2px);
+}
+
+.product-photo {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(160deg, var(--cream-soft), #e3d3b8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-photo .empty {
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brown-soft);
+  text-align: center;
+  padding: 12px;
+  opacity: 0.7;
+}
+
+.product-body {
+  padding: 16px 18px 18px;
+}
+
+.product-body h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--cream-soft);
+  color: var(--brown);
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+  padding: 7px 0;
+}
+
+.brand-row .label {
+  color: var(--brown-soft);
+  flex-shrink: 0;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.brand-row input {
+  border: none;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  text-align: right;
+  font-size: 13px;
+  color: var(--brown);
+  width: 100%;
+  padding: 2px 0;
+  transition: border-color 0.15s ease;
+}
+
+.brand-row input:hover {
+  border-bottom-color: var(--line);
+}
+
+.brand-row input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--wine);
+}
+
+.upload-row {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.upload-row label {
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 9px;
+  border: 1px solid var(--wine);
+  border-radius: 8px;
+  color: var(--wine);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.upload-row label:hover {
+  background: var(--wine);
+  color: var(--white);
+}
+
+.upload-row input[type="file"] {
+  display: none;
+}
+
+.role-readonly .brand-row input {
+  pointer-events: none;
+}
+
+.role-readonly .upload-row {
+  display: none;
+}
+
+.saved-flag {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--sage);
+  margin-top: 8px;
+}
